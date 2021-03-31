@@ -1,0 +1,1 @@
+Both tasks reside in index.html. The card task may have a few graphical differences (such as colors) to the image I was sent, but I couldn't create an exact copy without the design in .psd, though I did my best to match them.

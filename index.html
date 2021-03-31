@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <script src="urlFunction.js"></script>
+    <title>Card Task</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-upper">
+                <div class="title-section">
+                    <h1 class="card-title">Please select a font</h1>
+                </div>
+                <div class="button-section">
+                    <button class="tab-buttons" id="my-fonts">MY FONTS</button>
+                    <button class="tab-buttons" id="buy-fonts">BUY FONTS</button>
+                </div>
+            </div>
+            <div class="card-lower">
+                <div class="fonts-card-container" id="my-fonts-card">
+                    <div class="big-font-section">
+                        <div class="square green-square">
+                            <span>M</span>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="fonts" id="big-font">
+                            <label for="big-font" class="bulletted-text bigger-text">Merriweather project is led by Sorkin Type</label>
+                        </div>
+                    </div>
+                    <div class="small-fonts">
+                        <div class="small-font-section">
+                            <div class="square pink-square">
+                                <span>R</span>
+                            </div>
+                            <div class="radio-box">
+                                <input type="radio" name="fonts" id="small-font-1">
+                                <label for="small-font-1" class="bulletted-text">Roboto doesn't compromise, allowing letters</label>
+                            </div>
+                        </div>
+                        <div class="small-font-section">
+                            <div class="square blue-square">
+                                <span>NS</span>
+                            </div>
+                            <div class="radio-box">
+                                <input type="radio" name="fonts" id="small-font-2">
+                                <label for="small-font-2" class="bulletted-text">Noto Sans covers over 30 scripts</label>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="fonts-card-container inactive" id="buy-fonts-card">
+                    <div class="content">
+                        <img src="warning.png" alt="WARNING!" class="warning-image">
+                        <span>
+                            This is being worked upon. Please wait until it's operational. We're working as fast as we can 
+                            on it. Thank you for your patience.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
