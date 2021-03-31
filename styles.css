@@ -7,7 +7,6 @@
     font-family: "Montserrat Medium";
     src: url("/fonts/Montserrat-Medium.ttf") format("ttf");
 }
- 
 
 body{
     margin: 0;
@@ -35,7 +34,8 @@ body{
 }
 
 .card{
-    width: 50%;
+    width: fit-content;
+    max-width: 70%;
     margin: 0 auto;
 }
 
@@ -83,9 +83,8 @@ body{
     outline: none;
 }
 
-
 .big-font-section{
-    width: 35%;
+    width: 100%;
 }
 
 .big-font-section .radio-box{
@@ -95,19 +94,22 @@ body{
 }
 
 .small-font-section{
-    margin-bottom: 90px;
     display: flex;
 }
 
+.small-fonts .small-font-section:first-of-type{
+    margin-bottom: 120px;
+}
+
 .fonts-card-container{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: minmax(200px, 40%) minmax(300px, 60%);
 }
 
 .small-fonts{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
 }
 
 .square{
@@ -161,7 +163,7 @@ body{
 .blue-square{
     background-color: #006dfe;
     color: #bfdaff;
-    width: 30%;
+    width: calc(35% - 40px);
 }
 
 .blue-square:after{
@@ -227,4 +229,56 @@ input[type="radio"]:not(:checked) + .bulletted-text{
 
 .inactive{
     display: none;
+}
+
+@media only screen and (max-width: 920px){
+    .small-fonts{
+        width: fit-content;
+    }
+
+    .small-font-section{
+        display: block;
+    }
+
+    .radio-box{
+        margin-left: 0;
+        margin-top: 30px;
+        width: fit-content;
+    }
+
+    .blue-square{
+        width: 40%;
+    }
+
+    .pink-square{
+        width: 40%;
+    }
+
+    .fonts-card-container{
+        grid-template-columns: minmax(150px, 40%) minmax(200px, 50%);
+    }
+
+    .small-fonts .small-font-section:first-of-type{
+        margin-bottom: 15px;
+    }
+
+    .card{
+        max-width: calc(100% - 20px);
+    }
+}
+
+@media only screen and (max-width: 410px){
+    .fonts-card-container{
+        display: block;
+    }
+
+    .radio-box{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .big-font-section .radio-box{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
